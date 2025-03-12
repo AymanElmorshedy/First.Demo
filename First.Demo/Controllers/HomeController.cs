@@ -13,10 +13,19 @@ namespace First.Demo.Controllers
         //From Body => 
         //From form 
         //From Header 
-        public string Index([FromQuery]int id,string name, Product product)
+        public IActionResult Index()
         {
-            return $"id = {id} :: name = {name} product=> id:{product.Id} :: name:{product.Name}";
+            //return $"id = {id} :: name = {name} product=> id:{product.Id} :: name:{product.Name}";
             //return $"Hello From Index In Home Controller With Id = {id}";
+            return View();
+        }
+        public IActionResult ConnectUs()
+        {
+            return View();
+        }
+        public IActionResult AboutUs()
+        {
+            return View();
         }
     }
 }

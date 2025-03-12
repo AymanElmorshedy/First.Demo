@@ -18,16 +18,24 @@ namespace First.Demo.Controllers
         //    RedirectResult redirectResult = new RedirectResult("https://www.google.com");
         //    return redirectResult;
         //}
-        public RedirectToActionResult Index()
+        //public RedirectToActionResult Index()
+        //{
+        //    RedirectToActionResult redirectToActionResult = new RedirectToActionResult("Index", "Home", new { id = 10 });
+        //    return redirectToActionResult;
+        //}
+
+        public IActionResult Index()
         {
-            RedirectToActionResult redirectToActionResult = new RedirectToActionResult("Index", "Home", new { id = 10 });
-            return redirectToActionResult;
+            return View();
         }
 
-        public IActionResult Get()
+        public IActionResult GetAll()
         {
-            //return View();
-            return Content("Hello From Get Action", "text/html");
+            return View();
         }
+
+
+
+
     }
 }
