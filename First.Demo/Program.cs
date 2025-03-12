@@ -64,6 +64,8 @@ namespace First.Demo
                 );
             #endregion
 
+            app.UseStaticFiles();
+
             app.Run();
 
         }

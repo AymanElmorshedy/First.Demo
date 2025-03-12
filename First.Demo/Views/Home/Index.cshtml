@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/lib/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    @* <h1>Hello From Home Controller</h1> *@
+    <!--Singel Line-->
+    @* @DateTime.Now.Year *@
+    <!--Multible Line-->
+    @{
+        var x = 10;
+        var y = 5;
+        var z = x + y;
+    }
+    @*This Is A Comment*@
+    @*Header*@
+    <nav>
+        <center>
+            <a class="btn btn-success" href="/Home/Index">Home</a>
+            <a class="btn btn-primary" href="/Home/AboutUs">AboutUs</a>
+            <a class="btn btn-danger" href="/Home/ConnectUs">ConnectUs</a>
+        </center>
+    </nav>
+    @*Header*@
+    @*Body*@
+    <center>
+        <h1>Hello From Home Page</h1>
+    </center>
+    @*Body*@
+    @*Footer*@
+    <footer class="fixed-bottom">
+        <center>
+            <div>
+                <p>copyRight &copy; @DateTime.Now.Year</p>
+            </div>
+        </center>
+    </footer>
+    @*Footer*@
+
+</body>
+</html>
