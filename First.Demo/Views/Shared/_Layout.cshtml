@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -11,11 +12,29 @@
     @*Header*@
     <nav>
         <center>
+            @*HTML Tag*@
+            @*
             <a class="btn btn-success" href="/Home/Index">Home</a>
             <a class="btn btn-primary" href="/Home/AboutUs">AboutUs</a>
             <a class="btn btn-danger" href="/Home/ConnectUs">ConnectUs</a>
             <a class="btn btn-dark" href="/Product/Index">Product Home</a>
             <a class="btn btn-info" href="/Product/GetAll">All Products</a>
+            *@
+            @*HTMl Helper*@
+            @* @Html.ActionLink("Home", "Index", "Home", htmlAttributes: new { @class = "btn btn-success" }) *@
+            @* @Html.ActionLink("AboutUs", "AboutUs", "Home", htmlAttributes: new { @class = "btn btn-primary" }) *@
+            @* @Html.ActionLink("ConnectUs", "ConnectUs", "Home", htmlAttributes: new { @class = "btn btn-danger" }) *@
+            @* @Html.ActionLink("Products", "Index", "Product", htmlAttributes: new { @class = "btn btn-dark" }) *@
+            @* @Html.ActionLink("All Products", "GetAll", "Product", htmlAttributes: new { @class = "btn btn-info" }) *@
+            @*Tag Helper*@
+            <a class="btn btn-success" asp-action="Index" asp-controller="Home">Home</a>
+            <a class="btn btn-primary" asp-action="AboutUs" asp-controller="Home">AboutUs</a>
+            <a class="btn btn-danger" asp-action="ConnectUs" asp-controller="Home">ConnectUs</a>
+            <a class="btn btn-dark" asp-action="Index" asp-controller="Product">Product Home</a>
+            <a class="btn btn-info" asp-action="GetAll" asp-controller="product">All Products</a>
+            @*Tag Helper*@
+
+
         </center>
     </nav>
     @*Header*@
